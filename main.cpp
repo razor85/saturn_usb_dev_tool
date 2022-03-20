@@ -412,6 +412,8 @@ void serveFiles(ftdi_context *ftdiContext,
 }
 
 int main(int argc, const char **argv) {
+  log("Current 'cd' directory will be served");
+
   if (argc < 2) {
     log("Usage usb_dev_tool.exe filename.bin");
     return -1;
